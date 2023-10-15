@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="347.0" prefWidth="372.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="latihan_percabangan_latcabang1.Controller.FXML_UIController">
+   <children>
+      <Label layoutX="139.0" layoutY="14.0" text="Penghitung Denda">
+         <font>
+            <Font name="Arial Narrow Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="46.0" text="Tanggal Pinjam">
+         <font>
+            <Font name="Kristen ITC" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="Pinjam_date" layoutX="183.0" layoutY="43.0" style="-fx-cursor: hand;" />
+      <DatePicker fx:id="kembali_date" layoutX="183.0" layoutY="87.0" style="-fx-cursor: hand;" />
+      <Label layoutX="14.0" layoutY="90.0" text="Tanggal Kembali">
+         <font>
+            <Font name="Kristen ITC" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="136.0" text="Total Hari Peminjaman">
+         <font>
+            <Font name="Kristen ITC" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Tothari_txt" editable="false" layoutX="183.0" layoutY="133.0" prefHeight="25.0" prefWidth="144.0" />
+      <Label layoutX="331.0" layoutY="136.0" text="Hari">
+         <font>
+            <Font name="Kristen ITC" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="208.0" prefHeight="0.0" prefWidth="371.0" style="-fx-background-color: gold;" />
+      <Label layoutX="14.0" layoutY="175.0" text="Denda">
+         <font>
+            <Font name="Kristen ITC" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="denda_txt" editable="false" layoutX="183.0" layoutY="172.0" prefHeight="25.0" prefWidth="144.0" />
+      <TextField fx:id="Total_denda" editable="false" layoutX="183.0" layoutY="221.0" prefHeight="25.0" prefWidth="144.0" />
+      <Label layoutX="14.0" layoutY="224.0" text="Total Denda">
+         <font>
+            <Font name="Kristen ITC" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="259.0" prefHeight="0.0" prefWidth="371.0" style="-fx-background-color: gold;" />
+      <Button layoutX="14.0" layoutY="288.0" mnemonicParsing="false" onAction="#Hitung_Button_click" style="-fx-background-color: green; -fx-cursor: hand;" text="Hitung" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="139.0" layoutY="288.0" mnemonicParsing="false" onAction="#Hapus_button_click" style="-fx-background-color: orange; -fx-cursor: hand;" text="Hapus" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="270.0" layoutY="288.0" mnemonicParsing="false" onAction="#Keluar_Button_Click" style="-fx-background-color: red; -fx-cursor: hand;" text="Keluar" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="331.0" layoutY="175.0" text="/ Hari">
+         <font>
+            <Font name="Kristen ITC" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
